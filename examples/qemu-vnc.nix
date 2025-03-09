@@ -28,7 +28,7 @@ nixpkgs.lib.nixosSystem {
       };
 
       networking.hostName = "qemu-vnc";
-      system.stateVersion = config.system.nixos.version;
+      system.stateVersion = config.system.nixos.release;
 
       microvm.qemu.extraArgs = [
         "-vnc" ":0"
